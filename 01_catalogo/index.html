@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Etiquetas que influyen en el SEO-->
+    <meta name="author" content="Lorena">
+    <meta name="description" content="Recopilatorio de etiquetas HTML">
+    <meta name="keywords" content="HTML, imagenes, desarrollo web, diseño web">
+    <title>Catálogo de etiquetas HTML</title>
+    <link rel="shortcut" href="img/network_globe_world_2633.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <!-- Según la resolución de la pagina se verá una imagen u otra-->
+    <picture>
+        <source srcset="img/header_500.avif" media="(max-width: 500px)">
+        <source srcset="img/header_1100.avif" media="(max-width: 1100px)">
+        <img src="img/header_1920.avif" alt="Ordenador para programar">
+    </picture>
+</header>
+    <!--Soy un comentario-->
+
+    <!-- 1 - Etiquetas de texto -->
+
+    <nombre_etiqueta>Contenido</nombre_etiqueta>
+    <nombre_etiqueta>
+    
+    <nombre_etiqueta nombre_atributo="valor" atributo_booleano>Contenido</nombre_etiqueta>
+
+    <!-- 1.1 - Títulos-->
+    <!-- Atención: No existe h7 -->
+    <h1 id="titulo1" style="color:red">Soy un titulo h1</h1>
+    <h1>Soy otro h1</h1>
+    <h2>Soy un h2</h2>
+    <h3>Soy un h3</h3>
+    <h4>Soy un h4</h4>
+    <h5>Soy un h5</h5>
+    <h6>Soy un h6</h6>
+    
+    <!-- 1.2 - Párrafos -->
+    <p>Soy un párrafo</p>
+    <p>Me gusta tomar un <strong>cafe con leche</strong> por la <small>mañana</small></p>
+    <!-- Superíndice = sup -->
+    <p>La fórmula de la teoria de la relatividad es : e=mc<sup>2</sup></p>
+    <!-- Subíndice = sub -->
+    <p>La fórmula del agua es H<sub>2</sub>O</p>
+    <!-- Citar = cite / blockquote-->
+    <p>Una frase célebre de <cite>Galileo</cite> fue:</p>
+    <blockquote>...Sin embargo se mueve</blockquote>
+
+    <!-- 2 - Listas -->
+    <!-- 2.1 Listas desordenadas 0 unordered lists -->
+    <h2>Lista de la compra</h2>
+    <ul>
+        <!--li*5 para multiplicar la etiqueta por 5-->
+        <li>Leche</li>
+        <li>Queso</li>
+        <li>Jabón</li>
+        <li>Nueces</li>
+        <li>Naranjas</li>
+        <li>Limones</li>
+    </ul>
+
+    <!-- 2.2 - Listas ordenadas = ordered lists -->
+    <h2>Paises más contaminadores del mundo</h2>
+    <ol type="1" reversed> <!--type = atributo para cambiar, por ejemplo tipo de letra y reversed, qué es un atributo
+    booleano que, en este caso, quiere la lista de mas a menos 3,2,1...-->
+        <li>China</li>
+        <li>India</li>
+        <li>Estados Unidos</li>
+    </ol>
+
+    <!-- 3 - Tablas -->
+    <h2>Ejemplo de factura</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Concepto</th>
+                <th>Unidades</th>
+                <th>Precio</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Televisor Sony 85 pulgadas 8K</td>
+                <td>1</td>
+                <td>6000 €</td>
+                <td>6000 €</td>
+            </tr>
+            <tr>
+                <td>Frigorífico Balay</td>
+                <td>2</td>
+                <td>1500 €</td>
+                <td>3000 €</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td> <!-- con el atributo colspan le decimos cuantas columnas tiene que ocupar este dato-->
+                <td>9000 €</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- 4 - Imagenes -->
+    <img src="https://i.etsystatic.com/46836499/r/il/6cd5d8/5574288618/il_794xN.5574288618_54fg.jpg"alt="Taza de cafe solo">
+
+    <figure>
+        <img src="img/1200.JPG" alt="Taza de café solo"width="40%" title="Café buenisimo"> 
+        <figcaption>
+            <small>Siempre va bien un buen café por la mañana (imagen de tal en Freepik)</small>
+        </figcaption>
+    </figure>
+
+    <img src="img/2400.jpg" alt="" sizes="
+    (max-width: 640px) 100vw,
+    (max-width: 1200px) 100vw,
+    (max-width: 1920px) 100vw,
+    (max-width: 2400px) 100vw
+    " 
+    srcset="
+    img/640.jpg 640w,
+    img/1200.jpg 1200w,
+    img/1920.jpg 1920w,
+    img/2400.jpg 2400w
+    ">
+
+    <!-- Enlaces -->
+
+    <a href="https://google.es" target="_blank">Google</a>
+
+    <a href="#titulo1">'Ir al principio</a>
+
+    <a href="https://undraw.co/search">
+        <img src="undraw_barista_qd50.svg" alt="" width="100">
+    </a>
+
+    <!-- Etquetas para maquetar -->
+
+    <div>Hola</div>
+    <span>Hola</span>
+    <span>Hola</span>
+
+    <header></header> <!--banner-->
+    <nav></nav> <!--navegador-->
+    <main>
+        <section>
+            <article></article>
+        </section>
+        <section>
+            <article></article>
+        </section>
+        <aside></aside> <!--independiente del contenido principal-->
+    </main>
+    <footer></footer>
+
+
+    
+</body>
+</html>
