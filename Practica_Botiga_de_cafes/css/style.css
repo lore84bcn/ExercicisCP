@@ -113,44 +113,88 @@ article p {
 }
 
 #Opiniones article {
+  position: relative;
   width: 100%;
   background-color: white;
   color: black;
 }
 
-#Opiniones p {
+#Opiniones article p {
+  position: relative;
   width: 30%;
   margin: 1.5%;
+  margin-bottom: 20px;
+}
+
+#Opiniones article .autor1{
+  position: absolute;
+  bottom: -15px;
+  right:0;
+  color:red;
+}
+
+#Opiniones article .autor2{
+  position: absolute;
+  bottom: -15px;
+  right:400px;
+  color:red;
+}
+
+#Opiniones article .autor3{
+  position: absolute;
+  bottom: -15px;
+  left:200px;
+  color:red;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 20px;
   background-color: rgb(5, 54, 23);
   color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
-.footer .social-icons img {
-  width: 25px;
-  height: auto;
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline; 
+}
+
+.contact-info, .iconos, h4, ul {
+  flex: 1 1 20%;
+  margin: 20px;
+}
+
+.iconos img {
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 
-.footer div {
-  flex: 1;
-  min-width: 85px;
-  margin: 5px;
+h4 {
+  margin-bottom: 10px;
 }
 
-.footer div a {
-  display: block;
-  margin: 4px 0;
-  color: white;
-  font-family: Lato;
+ul {
+
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  list-style: none;
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 /*Sección Sobre nosotros*/
